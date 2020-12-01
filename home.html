@@ -1,0 +1,41 @@
+﻿{% extends "base.html" %}
+{% block title %}
+{% endblock title %}
+{% block info %}
+    <img class="card-img" id="home-image" src="{{ url_for('static', filename='home_images/code_six.jpg') }}"/>
+    <div class="card-img-overlay" id="home-main">
+        <h1 class="card-title" id="home-title">Welcome to CodingClub!</h1>
+        <p class="card-text" id="home-subtitle">Practical Programming Exercises</p>
+        <p class="lead" id="main-button">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+        </p>
+    </div>
+{% endblock %}
+{% block banner %}
+    <p>HELPING THOUSANDS OF STUDENTS AND PROFESSIONAL LEARN EVERYDAY!</p>
+{% endblock %}
+{% block content %}
+    <div class="card-deck expand-lg" id="home-cards">
+        <div class="card border-dark mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title text-center">Basic Projects</h5>
+                <p class="card-text">Basic projects are snippets of code that get the job done, nothing fancy here.</p>
+                <a href="#" class="btn btn-dark">Starting at $15</a>
+            </div>
+        </div>
+        <div class="card border-dark mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title text-center">Standard Projects</h5>
+                <p class="card-text">Standard projects are scripts that have greater functionality. Though they do the job exellently, there still are a few rough edges.</p>
+                <a href="#" class="btn btn-dark">Starting at $50</a>
+            </div>
+        </div>
+        <div class="card border-dark mb-3 text-center" style="max-width: 18rem;">
+            <div class="card-body text-dark">
+                <h5 class="card-title text-center">Premium Projects</h5>
+                <p class="card-text">Premium projects are fully functioning applications built for a professional setting. This baby comes with all the bells and whistles and a lifetime satisfaction guarantee policy!</p>
+                <a href="#" class="btn btn-dark">Request Quote Today!</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
